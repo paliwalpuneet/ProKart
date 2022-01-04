@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="15dp">
+    <ImageView
+        android:id="@+id/phone_image"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/samsung">
+    </ImageView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/phone_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Samsung Galaxy M12"
+            android:textSize="18sp"
+            android:textColor="@color/black">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Android Phone"
+            android:textSize="16sp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/phone_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="35,000R"
+            android:textColor="@color/teal_200"
+            android:textSize="15sp">
+
+        </TextView>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

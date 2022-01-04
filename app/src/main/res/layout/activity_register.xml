@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Register">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/register"></ImageView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/name_register"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:hint="Full Name"
+            android:padding="10dp"
+            android:background="@drawable/login_data_corners">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/email_register"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:hint="Email Id"
+            android:padding="10dp"
+            android:background="@drawable/login_data_corners">
+        </EditText>
+
+        <EditText
+            android:id="@+id/mobile_register"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:hint="Mobile No"
+            android:padding="10dp"
+            android:background="@drawable/login_data_corners">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/pass_register"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:hint="Password"
+            android:padding="10dp"
+            android:inputType="textPassword"
+            android:background="@drawable/login_data_corners">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/address_register"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:hint="Address"
+            android:padding="10dp"
+            android:background="@drawable/login_data_corners"
+            android:lines="4" ></EditText>
+
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/login_data_corners"
+            android:backgroundTint="@color/teal_700"
+            android:text="Register"
+            android:textStyle="bold"
+            app:backgroundTint="@color/teal_200"></Button>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_marginBottom="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already Registered?"
+                android:textColor="@color/black"
+                android:layout_margin="10dp"
+                android:textSize="16sp"></TextView>
+
+            <Button
+                android:id="@+id/login_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/login_data_corners"
+                android:text="Login"
+                android:textStyle="bold"
+                app:backgroundTint="@color/teal_200"></Button>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

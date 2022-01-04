@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context=".Activities.PhoneDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <com.synnapps.carouselview.CarouselView
+        android:id="@+id/phonePics"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"></com.synnapps.carouselview.CarouselView>
+
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="0.5"
+        android:isIndicator="false"
+        style="?android:attr/ratingBarStyleIndicator"
+        android:progressTint="#FFCC01"> </RatingBar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/phoneName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Samsung Galaxy M12"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Android Phone"
+            android:textSize="18sp">
+        </TextView>
+            </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="30dp"
+        >
+        <TextView
+            android:id="@+id/phonePrice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="$85"
+            android:textColor="@color/teal_700"
+            android:textSize="25sp"
+            android:layout_weight="1"
+            android:gravity="center">
+        </TextView>
+
+        <Button
+            android:id="@+id/addToCart"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/round_corners"
+            android:backgroundTint="#1a0000"
+            android:text="Add to Cart"
+            android:textSize="12dp"
+            android:textColor="@color/white"
+            app:backgroundTint="#1A0000"></Button>
+    </LinearLayout>
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="35dp"
+        android:text="Description"
+        android:background="@drawable/round_corners"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center">
+    </TextView>
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="data"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_margin="15dp"
+        ></TextView>
+    </LinearLayout>
+</ScrollView>
